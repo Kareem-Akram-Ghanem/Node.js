@@ -1,0 +1,73 @@
+1--the default behavior of moving all the declarations at the top of the scope before code execution
+3--var is function-scoped while let and const are block-scoped
+3-
+
+
+2-
+
+1 true 
+2-true
+4-false
+5-false 
+ 
+
+
+
+3
+1- JavaScript is … asynchronous, non-blocking, single-threaded language.
+
+
+2-is the concept of object-oriented programming used to hide
+the internal representation, or state, of an object from the
+outside ..........2) Encapsulation
+
+
+3-
+
+1
+The Fails!
+The Fails!
+The Fails!
+  
+
+2
+
+
+
+
+
+
+3
+(6/8)
+
+
+4
+
+boolean
+string
+
+
+
+5-
+0
+1
+4
+2
+3
+
+
+
+6-
+The i variable is not defined within the scope of the console.log statement.
+
+7-
+hello world
+10
+
+
+8-
+[59.52, 83.7, 93]
+
+9-
+
+['Batman', 'Bane']
