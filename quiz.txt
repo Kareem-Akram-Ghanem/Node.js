@@ -1,0 +1,105 @@
+1
+
+650, 440, 120, 40
+
+
+2-
+
+27
+
+3-
+
+30
+
+4-
+[59.52, 83.7, 93]
+
+
+5-
+true
+false
+ 
+6
+['Batman', 'Bane']
+
+
+7-
+number
+function
+undefined
+object
+object
+  
+
+8
+white, black, gray
+false
+
+9-
+
+2
+2
+
+
+
+
+-------------
+const readline = require('readline-sync');
+
+const tasks = [];
+
+function displayTasks() {
+  console.log('To-Do List:');
+  tasks.forEach((task, index) => {
+    console.log(`${index + 1}. ${task}`);
+  });
+  console.log('');
+}
+
+function addTask() {
+  const task = readline.question('Enter a new task: ');
+  tasks.push(task);
+  console.log(`Task "${task}" added to the list.`);
+}
+
+function removeTask() {
+  displayTasks();
+  const index = readline.question('Enter the number of the task to remove: ');
+
+  if (index >= 1 && index <= tasks.length) {
+    const removedTask = tasks.splice(index - 1, 1)[0];
+    console.log(`Task "${removedTask}" removed from the list.`);
+  } else {
+    console.log('Invalid task number.');
+  }
+}
+
+function main() {
+  while (true) {
+    console.log('Options:');
+    console.log('1. Display tasks');
+    console.log('2. Add a task');
+    console.log('3. Remove a task');
+    console.log('4. Exit');
+    const choice = readline.question('Enter your choice: ');
+
+    switch (choice) {
+      case '1':
+        displayTasks();
+        break;
+      case '2':
+        addTask();
+        break;
+      case '3':
+        removeTask();
+        break;
+      case '4':
+        console.log('Goodbye!');
+        process.exit(0);
+      default:
+        console.log('Invalid choice. Please try again.');
+    }
+  }
+}
+
+main();
